@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu, Layout, Avatar, Typography, Popover, Badge, List } from 'antd';
+import { HeaderLayoutProps } from '../../interface/Header.interface';
 import {
   BellOutlined,
   RightOutlined,
@@ -17,9 +18,9 @@ const fixed = 'fixed inset-0 z-30 transition w-64';
 // FIXME in collapsed width: ~'calc(100% - 80px)';
 const collapsedCss = 'w-20 bg-white';
 const button =
-  'w-10 h-10 leading-10 text-lg text-center cursor-pointer transition ease-in hover:text-blue-500';
+  'w-10 h-10 leading-10 text-base text-center cursor-pointer transition ease-in hover:text-blue-500';
 const iconButton =
-  'flex w-12 h-12 justify-center items-center rounded-3xl cursor-pointer hover:text-blue-500';
+  'flex w-12 h-12 justify-center items-center rounded-3xl cursor-pointer text-base hover:text-blue-500';
 const iconFont = 'text-gray-200 text-2xl';
 const rightContainer = 'flex items-center';
 
@@ -31,11 +32,6 @@ const clearButton = 'text-center h-12 leading-10 cursor-pointer';
 const fontTitle = 'text-base';
 const avatar =
   'https://images.unsplash.com/profile-fb-1547572180-93a860f0a32b.jpg?auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff';
-
-interface HeaderLayoutProps {
-  collapsed: boolean;
-  toggle: () => void;
-}
 
 const HeaderLayout: React.FC<HeaderLayoutProps> = ({ collapsed, toggle }) => {
   const shrinkComponentProps = {
@@ -53,8 +49,8 @@ const HeaderLayout: React.FC<HeaderLayoutProps> = ({ collapsed, toggle }) => {
             >
               <Text className={`${fontTitle}`}>Hi,</Text>
             </span>
-            <span>Khunnunthawat</span>
-            <Avatar className='mr-2' src={avatar} />
+            <span>nunthawat</span>
+            <Avatar className='mx-2' src={avatar} />
             {/* FIXME in Avatar style={{ marginLeft: 8 }} */}
           </>
         }
