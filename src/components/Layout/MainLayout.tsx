@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import HeaderLayout from './HeaderLayout';
+import { HeaderLayout } from './HeaderLayout';
 
-const MainLayout = ({ children }: any) => {
+export const MainLayout = ({ children }: any) => {
   const [collapsed, setCollapsed] = useState(false);
   // const [isMobile, setIsMobile] = useState(false);
 
@@ -24,5 +24,3 @@ const MainLayout = ({ children }: any) => {
     </div>
   );
 };
-
-export default MainLayout;

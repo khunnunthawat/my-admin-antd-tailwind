@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Breadcrumb } from 'antd';
 
-const Bread = () => {
+export const Bread = () => {
   return (
     <Breadcrumb className='flex mb-6 md:mb-4 items-center'>
       <Breadcrumb.Item key={1}>
@@ -11,5 +11,3 @@ const Bread = () => {
     </Breadcrumb>
   );
 };
-
-export default Bread;

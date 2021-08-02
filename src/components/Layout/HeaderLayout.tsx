@@ -65,7 +65,7 @@ const fontMenuItem = 'text-sm justify-center items-center';
 const avatar =
   'https://images.unsplash.com/profile-fb-1547572180-93a860f0a32b.jpg?auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff';
 
-const HeaderLayout: React.FC<HeaderLayoutProps> = ({ collapsed, toggle }) => {
+export const HeaderLayout: React.FC<HeaderLayoutProps> = ({ collapsed, toggle }) => {
   const onCollapseChange = {
     onClick: toggle,
   };
@@ -135,7 +135,6 @@ const HeaderLayout: React.FC<HeaderLayoutProps> = ({ collapsed, toggle }) => {
         className={`${iconButton}`}
       >
         <BellOutlined className={`${iconFont}+${iconButton}`} />
-        {/* <BellOutlined className='text-blue-500' /> */}
       </Badge>
     </Popover>
   );
@@ -152,5 +151,3 @@ const HeaderLayout: React.FC<HeaderLayoutProps> = ({ collapsed, toggle }) => {
     </Layout.Header>
   );
 };
-
-export default HeaderLayout;
