@@ -1,1 +1,1 @@
-export * from './Header.interface';
+export * from './Layout.interface';

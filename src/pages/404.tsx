@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Button, Result } from 'antd';
-import { ContentLayout } from '../components/Layout/ContentLayout';
+import { ContentLayout } from '../components/Layout/Content';
 
 const NotFoundPage: React.FC = () => {
   return (
